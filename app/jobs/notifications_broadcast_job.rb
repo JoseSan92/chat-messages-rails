@@ -1,0 +1,3 @@
+class NotificationBroadcastJob < ApplicationJob
+ 
+end

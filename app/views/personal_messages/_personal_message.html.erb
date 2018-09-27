@@ -1,0 +1,4 @@
+<div class="<%= user.id == personal_message.user.id ? 'outgoing' : 'incoming' %>">
+	<span class="texto"><%=  personal_message.body %></span>
+	<span class="timestamp"><%= personal_message.created_at %></span>
+</div>
