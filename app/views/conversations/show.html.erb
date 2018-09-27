@@ -1,5 +1,4 @@
 <h1>Chatting with <%= @conversation.with(current_user).name %></h1>
-<%= @yousuario.id %>
 <div id="conversation-main" class="chat">
   <div id="conversation-body" data-conversation-id="<%= @conversation.id %>" class="detalle-conversacion">
     <%= render partial: "personal_messages/personal_message", collection: @conversation.personal_messages, as: :personal_message, locals: {user: current_user } %>
